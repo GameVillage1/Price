@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Прайс на игры</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #111827;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      color: #facc15;
+      margin-bottom: 40px;
+    }
+
+    .games-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .game-card {
+      background-color: #1f2937;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.02);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .game-info {
+      padding: 15px;
+    }
+
+    .game-info h2 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #facc15;
+    }
+
+    .game-info p {
+      margin: 10px 0;
+      font-size: 0.9em;
+      color: #d1d5db;
+    }
+
+    .price {
+      font-size: 1.1em;
+      color: #22c55e;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Прайс на игры</h1>
+
+  <div class="games-container">
+    
+    <div class="game-card">
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
+      <div class="game-info">
+        <h2>Cyberpunk 2077</h2>
+        <p>RPG в футуристическом мире Найт-Сити.</p>
+        <div class="price">1999 ₽</div>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3">
+      <div class="game-info">
+        <h2>The Witcher 3</h2>
+        <p>Эпическая RPG с открытым миром.</p>
+        <div class="price">899 ₽</div>
+      </div>
+    </div>
+
+        <div class="game-card">
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg" alt="Half-Life 2">
+      <div class="game-info">
+        <h2>Red Dead Redemption 2</h2>
+        <p>Игра про мир дикого запада.</p>
+        <div class="price">1200 ₽</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+  </div>
+
+</body>
+</html>
